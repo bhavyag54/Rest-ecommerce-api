@@ -4,7 +4,7 @@ Build Using: NodeJs, MongoDb( No SQL Database )
 
 1. run npm i (to install all dependencies)
 2. setup a mongoDb server on localhost
-3. rename .env.sample file .env and add your personal configs
+3. rename .env.sample file to .env and add your personal configs
 4. Run npm start (to start the server)
 
 # API ENDPOINTS (Total : 11)
@@ -25,3 +25,7 @@ Build Using: NodeJs, MongoDb( No SQL Database )
 1. POST /seller/create-catalog - to create a catalog
 2. GET /seller/orders - list all orders
 3. POST /seller/:catalog_id/create-item - create a item in a catalog
+
+## ROLES (1 and 2)
+1. Users with role as 1 is just a buyer, and cannot list items to sell
+2. Users with role as 2 can list items to sell and can also buy items from other seller
